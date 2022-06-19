@@ -8,8 +8,7 @@ RUN ln -s /opt/maven/bin/mvn /usr/local/bin
 RUN rm /tmp/apache-maven-3.6.3-bin.tar.gz 
 RUN chown jenkins:jenkins /opt/maven;
 
-EXPOSE 8080
-EXPOSE 50000
+EXPOSE $PORT
 
 ENV MAVEN_HOME=/opt/mvn
 
